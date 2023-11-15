@@ -1,0 +1,1994 @@
+/* Import Google Fonts (Rubik, Bebas Neue)*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Rubik:wght@300;400;500;700;800;900&display=swap');
+
+
+/* Remove default margin, padding and border for all elements to make positioning easier */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Font family for body element */
+
+body {
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+
+/* HEADER STYLING */
+
+/* Header styling with linear gradient and sticky position */
+
+/*TEST
+header {
+    height: 4rem;
+    background-image: linear-gradient(to right, white 30%, rgb(0, 61, 165) 85%);
+    border-bottom: .1rem solid rgba(255, 81, 0, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+*/
+
+/* HEADINGS AND LOGO STYLING */
+
+/* Sets the font type and color for H1 and H2 headings */
+
+h1,
+h2 {
+    font-family: 'Carter One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+}
+
+/* Set logo Float value to ensure is stays to the left of the screen and increase logo size */
+
+
+/*TEST The syling below will be replaced by a responsive hamburger menu
+
+#logo {
+    Float: left;
+    font-size: 2.5rem;
+    margin: .5rem 2rem;
+    color: rgba(255, 81, 0, 0.9);
+}
+
+/*NAV MENU STYLING */
+/*TEST
+#nav-menu {
+    display: block;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+/* Styles the menu list items and floats them to the right of the screen */
+/*TEST
+#nav-menu,
+#logo {
+    line-height: 3rem;
+}
+
+/* Fixes the line height of the nav-menu and logo to give visual alignment */
+/*TEST
+#nav-menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 1.5rem;
+}
+
+/* Styles the anchors in the nav-menu to remove decoration and set color */
+/*TEST
+#nav-menu a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+/*Gives an underline effect on hover for nav-menu links */
+/*TEST
+#nav-menu a:hover {
+    border-bottom: .5rem solid rgba(255, 255, 255, 0.6);
+}
+
+/*Styles the nav-menu link for the active page */
+/*TEST
+.active {
+    border-bottom: .5rem solid rgba(255, 81, 0, 0.9);
+
+}
+*/
+#logo-link {
+    color: white;
+    border-bottom: .1rem solid rgb(0, 61, 165);
+}
+
+nav { 
+    background: rgb(0, 61, 165);
+    height: 6rem;
+    width: 100%;
+    border-bottom: .1rem solid rgba(255, 81, 0, 0.9);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 450;
+}
+
+nav a.active,nav a:hover {
+    border-bottom: .5rem solid rgba(255, 81, 0, 0.9);
+    transition: .3s;
+    border-radius: 3px;
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: none;
+}
+
+
+/* HERO IMAGE STYLING */
+
+/* Creates a fixed container for the hero image */
+
+#hero-container {
+    height: 37.5rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styles the hero image within the fixed container to allow the zoom animation effect */
+
+#hero-image {
+    height: 37.5rem;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+
+    /* Styles the zoom animation on loading page */
+    animation-name: hero-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/* Adds styling for the zoom animation, specifically the zoom level */
+
+@keyframes hero-animation {
+    from {
+        transform: scale(1.3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* hero image cover text styling */
+
+#hero-cover-text,
+#hero-cover-text h2 {
+    color: rgba(255, 81, 0, 0.9);
+    font-size: 5rem;
+}
+
+#hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-cover-text {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 200;
+    border: .25rem solid rgba(255, 81, 0, 0.9);
+    border-radius: 2rem;
+    width: 75%;
+    height: 40%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+}
+
+#hero-cover-text h3 {
+    font-weight: 400;
+    border-radius: 2rem;
+}
+
+/* SITE PURPOSE STYLING */
+
+#site-purpose {
+    width: 100%;
+    font-size: 1.3rem;
+    border-top: .1rem solid rgba(255, 81, 0, 0.9);
+}
+
+/* Below is the styling for the h2 heading on the site purpose section on the home page */
+
+#site-purpose>h2 {
+    width: 100%;
+    background-color: rgb(0, 61, 165);
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    Padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+#site-purpose-left {
+    width: 50%;
+    float: left;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#site-purpose-right {
+    width: 50%;
+    float: right;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+/* Below is the styling for the horizontal break for the site purpose headings shown on the home page */
+
+hr {
+    border-top: .25rem solid rgba(255, 81, 0, 0.9);
+    width: 100%;
+    margin: .25rem 0;
+}
+
+/* Below is the styling for headings shown on the left side of the site purpose section shown on the home page */
+
+.site-purpose-left-heading {
+    text-align: center;
+    width: 50%;
+    float: left;
+    clear: both;
+    margin-bottom: 1.5rem;
+    margin-left: 40%;
+}
+
+/* Below is the styling for headings shown on the right side of the site purpose section shown on the home page */
+
+.site-purpose-right-heading {
+    text-align: center;
+    width: 50%;
+    float: right;
+    clear: both;
+    margin-bottom: 1.5rem;
+    margin-right: 40%;
+}
+
+/* Below is the styling for the paragraphs appearing in the site purpose section under each heading (note: this styling is impactful on the layout for the entire site purpose section on the home page) */
+
+#site-purpose p {
+    height: 8rem;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto;
+    font-weight: 400;
+}
+
+/* Below is the styling for the 'prompt to choose option' from the main menu on the home page, this will be shown below the site purpose section */
+
+#prompt-to-choose-option {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    margin-top: 0;
+}
+
+/* MAIN MENU STYLING */
+
+#main-menu {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.main-menu-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    height: 10rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: rgba(255, 81, 0, 0.9);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.main-menu-panel:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    height: 10rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: rgb(0, 61, 165);
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+#main-menu a {
+    font-family: 'Carter One', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+/* CONTACT FORM STYLING */
+
+/* Contact form styling is shown below, this targets the form on the contact.html page */
+
+.contact-form {
+    margin: 5% auto;
+    background-color: rgba(255, 81, 0, 0.9);
+    max-width: 60%;
+    padding: 4rem;
+    color: white;
+    border-radius: 2rem;
+    border: .20rem solid rgb(0, 61, 165);
+}
+
+/* Targets the for header */
+
+.contact-form h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+/* Targets the inputs on the form */
+
+.form-input {
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem;
+    border-radius: .25rem;
+}
+
+/* Targets the labels for the form inputs */
+
+.contact-form>label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+/* Targets the textarea form input */
+
+.contact-form>textarea {
+    height: 18rem;
+}
+
+/* Targets the send message button */
+
+.send-message-button {
+    margin: 1rem;
+    border-radius: .25rem;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(0, 61, 165);
+    border: .2rem solid white;
+    color: white;
+    cursor: pointer;
+}
+
+/* Targets the required field <p> text on contact form */
+
+.contact-form>p {
+    font-weight: 600;
+    margin: 1rem;
+}
+
+/* CONTENT STYLING (STAY, EAT AND GO PAGES) */
+
+/* Styling below targets the main content container within which the individual item 'content card' will sit */
+
+.content-container {
+    width: 60%;
+    margin: 5rem auto;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+/*Styling below targets the 'content card' and its size, headings and paragraph text within the container */
+
+.content-card {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
+.content-card h2,
+h3 {
+    background-color: rgba(255, 81, 0, 1);
+    color: white;
+    padding-bottom: .75rem;
+    padding-top: .75rem;
+}
+
+.content-card>h2 {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-top: .20rem solid rgb(0, 61, 165);
+    border-left: .20rem solid rgb(0, 61, 165);
+    border-right: .20rem solid rgb(0, 61, 165);
+}
+
+.content-card>h3 {
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-bottom: 4rem;
+    border-bottom: .20rem solid rgb(0, 61, 165);
+    border-left: .20rem solid rgb(0, 61, 165);
+    border-right: .20rem solid rgb(0, 61, 165);
+}
+
+.content-card>p {
+    text-align: left;
+    width: 70%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Styling below targets the images within the content card */
+
+.content-image-container {
+    width: 50%;
+    height: 10%;
+    margin: 3rem auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling below targets the button links to external sites on each content card */
+
+.content-link-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.content-button {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(0, 61, 165);
+    border: .2rem solid white;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.content-button:hover {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgba(255, 81, 0, 0.9);
+    border: .2rem solid white;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* FOOTER STYLING */
+
+/* Footer syling below which has been adapted from the Love Running walkthrough project */
+
+footer {
+    height: 9rem;
+    margin-top: 5rem;
+}
+
+.social-networks {
+    text-align: center;
+    list-style-type: none;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 200%;
+    margin: 1% 2%;
+    padding: 1%;
+    color: rgb(0, 61, 165);
+    transition: 0.3s;
+}
+
+.social-networks i:hover {
+    color: rgba(255, 81, 0, 0.9);
+}
+
+/* ---------------------------------------------------------------------------------- MEDIA QUERIES ---------------------------------------------------------------------------------------------- */
+
+
+/* ----------------------------Below is the media query that will ensure responsiveness for devices with a screen size of 1200px by 1025px (large screens, large laptops etc)-------------------------------------------------------- */
+
+
+@media screen and (max-width: 1200px) {
+
+    /* HERO IMAGE STYLING */
+
+    /* hero image cover text styling */
+
+    #hero-cover-text,
+    #hero-cover-text h2 {
+        color: rgba(255, 81, 0, 1);
+        font-size: 4rem;
+    }
+
+    #hero-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-cover-text {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        text-align: center;
+        font-weight: 200;
+        border: .25rem solid rgba(255, 81, 0, 0.9);
+        border-radius: 2rem;
+        width: 75%;
+
+    }
+
+    /* SITE PURPOSE STYLING */
+
+    #site-purpose {
+        font-size: 1.2rem;
+    }
+
+
+    /* Below is the styling for the 'prompt to choose option' from the main menu on the home page, this will be shown below the site purpose section */
+
+    #prompt-to-choose-option {
+        font-size: 1.5rem;
+    }
+
+    /* MAIN MENU STYLING */
+
+    #main-menu {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .main-menu-panel {
+        height: 7rem;
+        font-size: 2.5rem;
+    }
+
+    .main-menu-panel:hover {
+        height: 7rem;
+        font-size: 2.5rem;
+    }
+
+    #main-menu a {
+        font-size: 2rem;
+    }
+
+    /* CONTENT STYLING (STAY, EAT AND GO PAGES) */
+
+    /* Styling below targets the main content container within which the individual item 'content card' will sit */
+
+    .content-container {
+        width: 70%;
+    }
+
+    /* Styling below targets the images within the content card */
+
+    .content-image-container {
+        width: 70%;
+    }
+
+}
+
+
+/* ----------------------------------------Below is the media query that will ensure responsiveness for devices with a max screen width of 1103px------------------------------------------------------- */
+
+@media screen and (max-width: 1103px) {
+
+    nav ul li a {
+        font-size: 1.3rem;
+    }
+    
+ 
+
+    #site-purpose {
+        font-size: 1rem;
+    }
+
+    #main-menu a {
+        font-size: 1.5rem;
+    }
+
+
+/* ----------------------------------------Below is the media query that will ensure responsiveness for devices with a screen size of 1024px by 769px (small screens, laptops etc)------------------------------------------------------- */
+
+
+@media screen and (max-width: 1024px) {
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+    
+
+    /*TEST
+    header {
+        height: 5rem;
+        background-image: linear-gradient(to right, white 30%, white 85%);
+        border-bottom: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    */
+
+    /*TEST
+    
+    #logo {
+        font-size: 2.3rem;
+        margin: .6rem .6rem;
+        letter-spacing: 5px;
+        ;
+    }
+
+    */
+
+    /*TEST
+    
+    #nav-menu {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+
+    #nav-menu,
+    #logo {
+        line-height: 2.1rem;
+    }
+
+    #nav-menu li {
+        margin-right: 1.5rem;
+        margin-top: .5rem;
+    }
+
+    #nav-menu a {
+        color: rgb(0, 61, 165);
+    }
+
+    #nav-menu a:hover {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.4);
+    }
+
+    .active {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.9);
+
+    }
+
+    */
+
+
+    #hero-container {
+        height: 30rem;
+    }
+
+    /* The Hero Image has been changed for smaller screens */
+
+    #hero-image {
+        height: 30rem;
+        background: url('../images/hero-image.jpg') no-repeat center center;
+    }
+
+    /* Adds styling for the zoom animation, specifically the zoom level */
+
+    /* hero image cover text styling */
+
+    #hero-cover-text,
+    #hero-cover-text h2 {
+        font-size: 4rem;
+    }
+
+    #hero-cover-text {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        width: 90%;
+        height: 20%;
+        padding: 1rem 1rem 6.5rem 1rem;
+        top: 7rem;
+    }
+
+    #hero-cover-text h3 {
+        font-weight: 500;
+        font-size: 1.9rem;
+    }
+
+
+    #site-purpose {
+        width: 100%;
+        font-size: .9rem;
+        border-top: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    /* Below is the styling for the h2 heading on the site purpose section on the home page */
+
+    #site-purpose>h2 {
+        font-size: .9rem;
+        width: 98%;
+        Padding-left: 1%;
+        padding-right: 1%;
+    }
+
+
+    #site-purpose-left {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    #site-purpose-right {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    /* Below is the styling for the horizontal break for the site purpose headings shown on the home page */
+
+    hr {
+        border-top: .25rem solid rgba(255, 81, 0, 0.9);
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for headings shown on the left side of the site purpose section shown on the home page */
+
+    .site-purpose-left-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for headings shown on the right side of the site purpose section shown on the home page */
+
+    .site-purpose-right-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for the paragraphs appearing in the site purpose section under each heading (note: this styling is impactful on the layout for the entire site purpose section on the home page) */
+
+    #site-purpose p {
+        height: 5rem;
+        width: 80%;
+        text-align: center;
+        margin: 1rem auto;
+        font-weight: 400;
+    }
+
+    /* Below is the styling for the 'prompt to choose option' from the main menu on the home page, this will be shown below the site purpose section */
+
+    #prompt-to-choose-option {
+        font-size: .9rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    /* MAIN MENU STYLING */
+
+    #main-menu {
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .main-menu-panel {
+        width: 85%;
+        text-align: center;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+    }
+
+    .main-menu-panel:hover {
+        width: 85%;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    /* CONTACT FORM STYLING */
+
+    /* Contact form styling is shown below, this targets the form on the contact.html page */
+
+    .contact-form {
+        margin: 3rem auto;
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    /* Targets the for header */
+
+    .contact-form h2 {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+
+    /* Targets the inputs on the form */
+
+    .form-input {
+        width: 90%;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 1rem;
+        border-radius: .25rem;
+    }
+
+    /* Targets the labels for the form inputs */
+
+    .contact-form>label {
+        font-size: 1rem;
+    }
+
+    /* Targets the send message button */
+
+    .send-message-button {
+        width: 30%;
+    }
+
+    /* CONTENT STYLING (STAY, EAT AND GO PAGES) */
+
+    /* Styling below targets the main content container within which the individual item 'content card' will sit */
+
+    .content-container {
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    /*Styling below targets the 'content card' and its size, headings and paragraph text within the container */
+
+    .content-card {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    .content-card h2,
+    h3 {
+        background-color: rgba(255, 81, 0, 1);
+        color: white;
+        padding-bottom: 1.1rem;
+        padding-top: 1.1rem;
+    }
+
+
+    .content-card>p {
+        width: 95%;
+    }
+
+    /* Styling below targets the images within the content card */
+
+    .content-image-container {
+        width: 95%;
+    }
+
+    /* Styling below targets the button links to external sites on each content card */
+
+    .content-link-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: .1em;
+    }
+
+    .content-button {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 2.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    .content-button:hover {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 2.5rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+}
+
+/* -----------------------------------------------------------Below is the media query that will ensure responsiveness for devices with a max-width of 952px ---------------------------------------------------------------- */
+
+@media (max-width: 952px) {
+
+    .checkbtn {
+        display: none;
+    }
+
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 858px) {
+
+    .checkbtn{
+        display: block;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 5;
+        height: 6rem;
+    }
+
+    nav ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 6rem;
+        left: -100%;
+        text-align: center;
+        z-index: 4;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 30px;
+        margin-top: 2rem;
+    }
+
+    nav ul li a {
+        color: rgb(0, 61, 165);
+        font-size: 2rem;
+    }
+
+    a:hover,a.active {
+        background: none;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+}
+
+/* -----------------------------------------------------------Below is the media query that will ensure responsiveness for devices with a max screen witdth of 768px---------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 6rem;
+        background-image: linear-gradient(to right, white 30%, white 85%);
+        border-bottom: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    #logo {
+        font-size: 2.2rem;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
+        letter-spacing: 7px;
+    }
+
+    #nav-menu {
+        font-size: 1.4rem;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+
+    #nav-menu,
+    #logo {
+        line-height: 2.1rem;
+    }
+
+    #nav-menu li {
+        margin-right: 4.4rem;
+    }
+
+    #nav-menu a {
+        color: rgb(0, 61, 165);
+    }
+
+    #nav-menu a:hover {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.4);
+    }
+
+    .active {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.9);
+
+    }
+
+    #hero-container {
+        height: 30rem;
+    }
+
+    /* The Hero Image has been changed for smaller screens */
+
+    #hero-image {
+        height: 30rem;
+        background: url('../images/hero-image.jpg') no-repeat center center;
+    }
+
+    /* Adds styling for the zoom animation, specifically the zoom level */
+
+    /* hero image cover text styling */
+
+    #hero-cover-text,
+    #hero-cover-text h2 {
+        font-size: 2.8rem;
+    }
+
+    #hero-cover-text {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        width: 95%;
+        height: 20%;
+        padding: 1rem 1rem 6rem 1rem;
+        top: 5rem;
+    }
+
+    #hero-cover-text h3 {
+        font-weight: 500;
+        font-size: 1.9rem;
+    }
+
+
+    #site-purpose {
+        width: 100%;
+        font-size: .9rem;
+        border-top: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    /* Below is the styling for the h2 heading on the site purpose section on the home page */
+
+    #site-purpose>h2 {
+        font-size: .9rem;
+        width: 98%;
+        Padding-left: 1%;
+        padding-right: 1%;
+    }
+
+
+    #site-purpose-left {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    #site-purpose-right {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    /* Below is the styling for the horizontal break for the site purpose headings shown on the home page */
+
+    hr {
+        display: none;
+    }
+
+    /* Below is the styling for headings shown on the left side of the site purpose section shown on the home page */
+
+    .site-purpose-left-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for headings shown on the right side of the site purpose section shown on the home page */
+
+    .site-purpose-right-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for the paragraphs appearing in the site purpose section under each heading (note: this styling is impactful on the layout for the entire site purpose section on the home page) */
+
+    #site-purpose p {
+        height: 5rem;
+        width: 96%;
+        text-align: center;
+        margin: 1rem auto;
+        font-weight: 400;
+    }
+
+    /* Below is the styling for the 'prompt to choose option' from the main menu on the home page, this will be shown below the site purpose section */
+
+    #prompt-to-choose-option {
+        font-size: .9rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    /* MAIN MENU STYLING */
+
+    #main-menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-menu-panel {
+        width: 85%;
+        text-align: center;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+    }
+
+    .main-menu-panel:hover {
+        width: 85%;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    /* CONTACT FORM STYLING */
+
+    /* Contact form styling is shown below, this targets the form on the contact.html page */
+
+    .contact-form {
+        margin: 3rem auto;
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    /* Targets the for header */
+
+    .contact-form h2 {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+
+    /* Targets the inputs on the form */
+
+    .form-input {
+        width: 90%;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 1rem;
+        border-radius: .25rem;
+    }
+
+    /* Targets the labels for the form inputs */
+
+    .contact-form>label {
+        font-size: 1rem;
+    }
+
+    /* Targets the send message button */
+
+    .send-message-button {
+        width: 90%;
+    }
+
+    /* CONTENT STYLING (STAY, EAT AND GO PAGES) */
+
+    /* Styling below targets the main content container within which the individual item 'content card' will sit */
+
+    .content-container {
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    /*Styling below targets the 'content card' and its size, headings and paragraph text within the container */
+
+    .content-card {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    .content-card h2,
+    h3 {
+        background-color: rgba(255, 81, 0, 1);
+        color: white;
+        padding-bottom: 1.1rem;
+        padding-top: 1.1rem;
+    }
+
+
+    .content-card>p {
+        width: 95%;
+    }
+
+    /* Styling below targets the images within the content card */
+
+    .content-image-container {
+        width: 95%;
+    }
+
+    /* Styling below targets the button links to external sites on each content card */
+
+    .content-link-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: .1em;
+    }
+
+    .content-button {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .content-button:hover {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+}
+
+
+/* -----------------------------------------------------------Below is the media query that will ensure responsiveness for devices with a max screen width of 506px---------------------------------------------------------------- */
+
+
+@media screen and (max-width: 506px) {
+
+    label.logo{
+        font-size: 1.5rem;
+        padding-left: 50px;
+    }
+
+    header {
+        height: 5.56rem;
+        background-image: linear-gradient(to right, white 30%, white 85%);
+        border-bottom: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    #logo {
+        font-size: 2.3rem;
+        margin: .4rem .4rem;
+        letter-spacing: 5px;
+        ;
+    }
+
+    #nav-menu {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+
+    #nav-menu,
+    #logo {
+        line-height: 2.1rem;
+    }
+
+    #nav-menu li {
+        margin-right: 1.5rem;
+    }
+
+    #nav-menu a {
+        color: rgb(0, 61, 165);
+    }
+
+    #nav-menu a:hover {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.4);
+    }
+
+    .active {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.9);
+
+    }
+
+    #hero-container {
+        height: 30rem;
+    }
+
+    /* The Hero Image has been changed for smaller screens */
+
+    #hero-image {
+        height: 30rem;
+        background: url('../images/hero-image.jpg') no-repeat center center;
+    }
+
+    /* Adds styling for the zoom animation, specifically the zoom level */
+
+    /* hero image cover text styling */
+
+    #hero-cover-text,
+    #hero-cover-text h2 {
+        font-size: 2.4rem;
+    }
+
+    #hero-cover-text {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        width: 95%;
+        height: 20%;
+        padding: 1rem 1rem 8rem 1rem;
+        top: 2rem;
+    }
+
+    #hero-cover-text h3 {
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+
+
+    #site-purpose {
+        width: 100%;
+        font-size: .9rem;
+        border-top: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    /* Below is the styling for the h2 heading on the site purpose section on the home page */
+
+    #site-purpose>h2 {
+        font-size: .9rem;
+        width: 98%;
+        Padding-left: 1%;
+        padding-right: 1%;
+    }
+
+
+    #site-purpose-left {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    #site-purpose-right {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    /* Below is the styling for the horizontal break for the site purpose headings shown on the home page */
+
+    hr {
+        display: none;
+    }
+
+    /* Below is the styling for headings shown on the left side of the site purpose section shown on the home page */
+
+    .site-purpose-left-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for headings shown on the right side of the site purpose section shown on the home page */
+
+    .site-purpose-right-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for the paragraphs appearing in the site purpose section under each heading (note: this styling is impactful on the layout for the entire site purpose section on the home page) */
+
+    #site-purpose p {
+        height: 5rem;
+        width: 96%;
+        text-align: center;
+        margin: 1rem auto;
+        font-weight: 400;
+    }
+
+    /* Below is the styling for the 'prompt to choose option' from the main menu on the home page, this will be shown below the site purpose section */
+
+    #prompt-to-choose-option {
+        font-size: .9rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    /* MAIN MENU STYLING */
+
+    #main-menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-menu-panel {
+        width: 85%;
+        text-align: center;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+    }
+
+    .main-menu-panel:hover {
+        width: 85%;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    /* CONTACT FORM STYLING */
+
+    /* Contact form styling is shown below, this targets the form on the contact.html page */
+
+    .contact-form {
+        margin: 3rem auto;
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    /* Targets the for header */
+
+    .contact-form h2 {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+
+    /* Targets the inputs on the form */
+
+    .form-input {
+        width: 90%;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 1rem;
+        border-radius: .25rem;
+    }
+
+    /* Targets the labels for the form inputs */
+
+    .contact-form>label {
+        font-size: 1rem;
+    }
+
+    /* Targets the send message button */
+
+    .send-message-button {
+        width: 90%;
+    }
+
+    /* CONTENT STYLING (STAY, EAT AND GO PAGES) */
+
+    /* Styling below targets the main content container within which the individual item 'content card' will sit */
+
+    .content-container {
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    /*Styling below targets the 'content card' and its size, headings and paragraph text within the container */
+
+    .content-card {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    .content-card h2,
+    h3 {
+        background-color: rgba(255, 81, 0, 1);
+        color: white;
+        padding-bottom: 1.1rem;
+        padding-top: 1.1rem;
+    }
+
+
+    .content-card>p {
+        width: 95%;
+    }
+
+    /* Styling below targets the images within the content card */
+
+    .content-image-container {
+        width: 95%;
+    }
+
+    /* Styling below targets the button links to external sites on each content card */
+
+    .content-link-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: .1em;
+    }
+
+    .content-button {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .content-button:hover {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+}
+
+
+/* -----------------------------------------------------------Below is the media query that will ensure responsiveness for devices with a max screen width of 418px---------------------------------------------------------------- */
+
+@media screen and (max-width: 418px) {
+
+    label.logo{
+        font-size: .9rem;
+        padding-left: 2px;
+        font-weight: 200;
+    }
+
+}
+
+
+/* ---------------------------------------------Below is the media query that will ensure responsiveness for devices with a max screen width of 330px ------------------------------------------------------------------ */
+
+@media screen and (max-width: 330px) {
+
+    header {
+        height: 4rem;
+        background-image: linear-gradient(to right, white 30%, white 85%);
+        border-bottom: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    #logo {
+        font-size: 1.1rem;
+        margin-left: 2rem;
+    }
+
+    /*TEST
+    
+    #nav-menu {
+        font-size: .9rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    #nav-menu,
+    #logo {
+        line-height: 1rem;
+    }
+
+    #nav-menu li {
+        margin-right: 1.3rem;
+    }
+
+    #nav-menu a {
+        color: rgb(0, 61, 165);
+    }
+
+    #nav-menu a:hover {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.4);
+    }
+
+    .active {
+        border-bottom: .3rem solid rgba(255, 81, 0, 0.9);
+
+    } 
+    
+    */
+
+
+
+
+
+
+
+    #hero-container {
+        height: 30rem;
+    }
+
+    /* The Hero Image has been changed for smaller screens */
+
+    #hero-image {
+        height: 30rem;
+        background: url('../images/hero-image-responsive-1.webp') no-repeat center center;
+    }
+
+    /* Adds styling for the zoom animation, specifically the zoom level */
+
+    /* hero image cover text styling */
+
+    #hero-cover-text,
+    #hero-cover-text h2 {
+        font-size: 2.2rem;
+    }
+
+    #heart-icon {
+        display: none;
+    }
+
+    #hero-cover-text {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+        width: 95%;
+        height: 20%;
+        padding: 1rem 1rem 8rem 1rem;
+        top: 4rem;
+    }
+
+    #hero-cover-text h3 {
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+
+
+    #site-purpose {
+        width: 100%;
+        font-size: .9rem;
+        border-top: .1rem solid rgba(255, 81, 0, 0.9);
+    }
+
+    /* Below is the styling for the h2 heading on the site purpose section on the home page */
+
+    #site-purpose>h2 {
+        font-size: .9rem;
+        width: 100%;
+        Padding-left: 1%;
+        padding-right: 1%;
+    }
+
+
+    #site-purpose-left {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    #site-purpose-right {
+        width: 100%;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    /* Below is the styling for the horizontal break for the site purpose headings shown on the home page */
+
+    hr {
+        display: none;
+    }
+
+    /* Below is the styling for headings shown on the left side of the site purpose section shown on the home page */
+
+    .site-purpose-left-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for headings shown on the right side of the site purpose section shown on the home page */
+
+    .site-purpose-right-heading {
+        text-align: center;
+        width: 100%;
+        margin-bottom: .1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Below is the styling for the paragraphs appearing in the site purpose section under each heading (note: this styling is impactful on the layout for the entire site purpose section on the home page) */
+
+    #site-purpose p {
+        height: 5rem;
+        width: 96%;
+        text-align: center;
+        margin: 1rem auto;
+        font-weight: 400;
+    }
+
+    /* Below is the styling for the 'prompt to choose option' from the main menu on the home page, this will be shown below the site purpose section */
+
+    #prompt-to-choose-option {
+        font-size: .9rem;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    /* MAIN MENU STYLING */
+
+    #main-menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-menu-panel {
+        width: 85%;
+        text-align: center;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+    }
+
+    .main-menu-panel:hover {
+        width: 85%;
+        height: 4rem;
+        margin: .5rem auto;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    /* CONTACT FORM STYLING */
+
+    /* Contact form styling is shown below, this targets the form on the contact.html page */
+
+    .contact-form {
+        margin: 3rem auto;
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    /* Targets the for header */
+
+    .contact-form h2 {
+        margin-bottom: 3rem;
+        font-size: 1rem;
+    }
+
+    /* Targets the inputs on the form */
+
+    .form-input {
+        width: 90%;
+        height: 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 1rem;
+        border-radius: .25rem;
+    }
+
+    /* Targets the labels for the form inputs */
+
+    .contact-form>label {
+        font-size: 1rem;
+    }
+
+    /* Targets the send message button */
+
+    .send-message-button {
+        width: 90%;
+    }
+
+    /* CONTENT STYLING (STAY, EAT AND GO PAGES) */
+
+    /* Styling below targets the main content container within which the individual item 'content card' will sit */
+
+    .content-container {
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    /*Styling below targets the 'content card' and its size, headings and paragraph text within the container */
+
+    .content-card {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+    }
+
+    .content-card h2,
+    h3 {
+        background-color: rgba(255, 81, 0, 1);
+        color: white;
+        padding-bottom: 1.1rem;
+        padding-top: 1.1rem;
+    }
+
+
+    .content-card>p {
+        width: 95%;
+    }
+
+    /* Styling below targets the images within the content card */
+
+    .content-image-container {
+        width: 95%;
+    }
+
+    /* Styling below targets the button links to external sites on each content card */
+
+    .content-link-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: .1em;
+    }
+
+    .content-button {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .content-button:hover {
+        margin-left: .5rem;
+        margin-right: .5rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+}
