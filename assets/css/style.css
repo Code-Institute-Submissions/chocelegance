@@ -109,11 +109,11 @@ h2 {
 */
 #logo-link {
     color: white;
-    border-bottom: .1rem solid rgb(0, 61, 165);
+    border-bottom: .1rem solid rgb(1, 44, 112);
 }
 
 nav { 
-    background: rgb(0, 61, 165);
+    background: rgb(1, 44, 112);
     height: 6rem;
     width: 100%;
     border-bottom: .1rem solid rgba(255, 81, 0, 0.9);
@@ -265,7 +265,7 @@ nav a.active,nav a:hover {
 
 #site-purpose>h2 {
     width: 100%;
-    background-color: rgb(0, 61, 165);
+    background-color: rgb(1, 44, 112);
     color: white;
     text-align: center;
     margin-left: auto;
@@ -379,7 +379,7 @@ hr {
     height: 10rem;
     margin: 0 auto;
     border-radius: 2rem;
-    background-color: rgb(0, 61, 165);
+    background-color: rgb(1, 44, 112);
     color: white;
     font-size: 2rem;
     font-weight: 600;
@@ -403,7 +403,7 @@ hr {
     padding: 4rem;
     color: white;
     border-radius: 2rem;
-    border: .20rem solid rgb(0, 61, 165);
+    border: .20rem solid rgb(1, 44, 112);
 }
 
 /* Targets the for header */
@@ -450,7 +450,7 @@ hr {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
-    background-color: rgb(0, 61, 165);
+    background-color: rgb(1, 44, 112);
     border: .2rem solid white;
     color: white;
     cursor: pointer;
@@ -493,18 +493,18 @@ h3 {
 .content-card>h2 {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    border-top: .20rem solid rgb(0, 61, 165);
-    border-left: .20rem solid rgb(0, 61, 165);
-    border-right: .20rem solid rgb(0, 61, 165);
+    border-top: .20rem solid rgb(1, 44, 112);
+    border-left: .20rem solid rgb(1, 44, 112);
+    border-right: .20rem solid rgb(1, 44, 112);
 }
 
 .content-card>h3 {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     margin-bottom: 4rem;
-    border-bottom: .20rem solid rgb(0, 61, 165);
-    border-left: .20rem solid rgb(0, 61, 165);
-    border-right: .20rem solid rgb(0, 61, 165);
+    border-bottom: .20rem solid rgb(1, 44, 112);
+    border-left: .20rem solid rgb(1, 44, 112);
+    border-right: .20rem solid rgb(1, 44, 112);
 }
 
 .content-card>p {
@@ -551,7 +551,7 @@ h3 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    background-color: rgb(0, 61, 165);
+    background-color: rgb(1, 44, 112);
     border: .2rem solid white;
     color: white;
     cursor: pointer;
@@ -598,7 +598,7 @@ footer {
     font-size: 200%;
     margin: 1% 2%;
     padding: 1%;
-    color: rgb(0, 61, 165);
+    color: rgb(1, 44, 112);
     transition: 0.3s;
 }
 
@@ -1135,7 +1135,7 @@ footer {
     }
 
     #nav-menu a {
-        color: rgb(0, 61, 165);
+        color: rgb(1, 44, 112);
     }
 
     #nav-menu a:hover {
@@ -1428,7 +1428,7 @@ footer {
     }
 
     #nav-menu a {
-        color: rgb(0, 61, 165);
+        color: rgb(1, 44, 112);
     }
 
     #nav-menu a:hover {
